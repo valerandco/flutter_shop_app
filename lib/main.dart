@@ -23,6 +23,8 @@ class HomePage extends StatelessWidget {
           children: [
             Container(
               height: 300,
+              width: double.infinity,
+              padding: EdgeInsets.only(left: 25, right: 25, top: 60),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(bottomRight: Radius.circular(50), bottomLeft: Radius.circular(50)),
                 gradient: LinearGradient(
@@ -35,7 +37,27 @@ class HomePage extends StatelessWidget {
               ),
               child: Column(
                 children:<Widget>[
+                  Image.asset('assets/menu.png', width: 20),
 
+                  SizedBox(height: 15),
+
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Expanded(
+                        flex: 4,
+                        child: Text(
+                          'Best Online \nSocks Collection',
+                          style: TextStyle(
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold,
+                            color: Color.fromRGBO(97, 90, 90, 1),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
