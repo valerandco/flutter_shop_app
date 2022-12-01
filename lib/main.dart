@@ -24,7 +24,19 @@ class HomePage extends StatelessWidget {
             Container(
               height: 300,
               decoration: BoxDecoration(
-                color: Colors.lightBlue,
+                borderRadius: BorderRadius.only(bottomRight: Radius.circular(50), bottomLeft: Radius.circular(50)),
+                gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  colors: [
+                    Color.fromRGBO(255, 250, 182, 1),
+                    Color.fromRGBO(255, 239, 78, 1),
+                  ]
+                ),
+              ),
+              child: Column(
+                children:<Widget>[
+
+                ],
               ),
             ),
 
