@@ -56,11 +56,17 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                       ),
+                      //
+                      Expanded(
+                        flex: 3,
+                        child: Image.asset('name'),
+                      ),
                     ],
                   ),
                 ],
               ),
             ),
+            Container(),
 
           ],
 
