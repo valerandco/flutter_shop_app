@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
                       //
                       Expanded(
                         flex: 3,
-                        child: Image.asset('name'),
+                        child: Image.asset('assets/1.png'),
                       ),
                     ],
                   ),
