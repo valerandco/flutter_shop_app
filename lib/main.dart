@@ -36,6 +36,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children:<Widget>[
                   Image.asset('assets/menu.png', width: 20),
 
@@ -66,7 +67,24 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            Container(),
+            Transform.translate(
+              offset: const Offset(0, -35),
+              child: Container(
+                height: 60,
+                margin: const EdgeInsets.symmetric(horizontal: 25),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      blurRadius: 20,
+                      offset: Offset(0, 10)
+                    ),
+                  ],
+                  borderRadius: BorderRadius.circular(5),
+                  color: Colors.white,
+                ),
+              ),
+            ),
 
           ],
 
